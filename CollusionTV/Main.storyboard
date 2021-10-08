@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Tv View Controller-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController id="Xgj-up-wSf" customClass="HomeTvViewController" customModule="CollusionTV" customModuleProvider="target" sceneMemberID="viewController">
+=======
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgj-up-wSf">
     <device id="appleTV" appearance="light"/>
     <dependencies>
@@ -12,6 +27,7 @@
         <scene sceneID="9lE-WX-96o">
             <objects>
                 <viewController id="Xgj-up-wSf" customClass="TestViewController" customModule="CollusionTV" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> develop
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
                         <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
@@ -20,6 +36,259 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFu-pJ-4Na">
+                                <rect key="frame" x="723" y="100" width="474" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="474" id="1oF-aF-OGd"/>
+                                    <constraint firstAttribute="height" constant="330" id="fb4-CJ-BC6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHI-cS-Q8u">
+                                <rect key="frame" x="558.5" y="530" width="803" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="803" id="xIN-Bu-Xpt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-FV-OSu">
+                                <rect key="frame" x="580" y="608" width="760" height="102"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWK-bm-Vby">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="Vw5-YV-GHD"/>
+                                            <constraint firstAttribute="height" constant="102" id="mLP-1X-JBu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="3Nu-pB-ME3" kind="show" id="1PQ-e2-04k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-ee-8v5">
+                                        <rect key="frame" x="440" y="0.0" width="320" height="102"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="pl5-cC-dNY" kind="show" id="i6B-Ge-0pP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <constraints>
+                            <constraint firstItem="lMK-FV-OSu" firstAttribute="top" secondItem="WHI-cS-Q8u" secondAttribute="bottom" constant="50" id="ASg-Xr-0ye"/>
+                            <constraint firstItem="qFu-pJ-4Na" firstAttribute="top" secondItem="Oo6-ab-TCE" secondAttribute="top" constant="100" id="Jjs-a5-m9v"/>
+                            <constraint firstItem="WHI-cS-Q8u" firstAttribute="top" secondItem="qFu-pJ-4Na" secondAttribute="bottom" constant="100" id="KUa-Vc-Cwi"/>
+                            <constraint firstItem="WHI-cS-Q8u" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="Tsf-Xg-bn0"/>
+                            <constraint firstItem="qFu-pJ-4Na" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="cOK-cN-9UE"/>
+                            <constraint firstItem="lMK-FV-OSu" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="oIp-Jm-Zsk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="WHI-cS-Q8u" id="z9w-Mo-mlD"/>
+                        <outlet property="howToPlayButton" destination="RWK-bm-Vby" id="Agc-8B-uL9"/>
+                        <outlet property="startGameButton" destination="Zr0-ee-8v5" id="AyQ-mR-qNM"/>
+                        <outlet property="titleImageView" destination="qFu-pJ-4Na" id="kry-Ku-UZd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="-111"/>
+        </scene>
+        <!--Lobby View Controller-->
+        <scene sceneID="awS-u1-wDz">
+            <objects>
+                <viewController id="pl5-cC-dNY" customClass="LobbyViewController" customModule="CollusionTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gXa-rS-qqW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZRq-Xx-rCa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nmA-He-hqu">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-yR-Qay">
+                                <rect key="frame" x="849" y="150" width="222" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="S9u-sB-XJd"/>
+                                    <constraint firstAttribute="height" constant="154" id="zbt-Z6-BX9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-SQ-GXV">
+                                <rect key="frame" x="920.5" y="334" width="79" height="30"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="1160" placeholderIntrinsicHeight="389" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bOQ-AV-B0X">
+                                <rect key="frame" x="380" y="409" width="1160" height="389"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="V4P-2b-YJo">
+                                <rect key="frame" x="628" y="818" width="664" height="102"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjC-dV-tcu">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="102"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="302" id="SIn-pV-Oem"/>
+                                            <constraint firstAttribute="height" constant="102" id="lv2-AG-zCJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="debugAddPlayerButton:" destination="pl5-cC-dNY" eventType="primaryActionTriggered" id="dO6-JA-ghl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruI-Jm-2FO">
+                                        <rect key="frame" x="362" y="0.0" width="302" height="102"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="302" id="rC1-TQ-mW4"/>
+                                            <constraint firstAttribute="height" constant="102" id="uYa-dM-XBp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="OdA-Tz-EU0" kind="show" id="cMf-te-vEQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3cP-Nx-jmd"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="dI7-SQ-GXV" firstAttribute="top" secondItem="vaI-yR-Qay" secondAttribute="bottom" constant="30" id="50l-sB-xTV"/>
+                            <constraint firstItem="bOQ-AV-B0X" firstAttribute="top" secondItem="dI7-SQ-GXV" secondAttribute="bottom" constant="45" id="6Rg-To-toX"/>
+                            <constraint firstItem="vaI-yR-Qay" firstAttribute="top" secondItem="3cP-Nx-jmd" secondAttribute="top" constant="90" id="BaQ-sS-q6x"/>
+                            <constraint firstItem="vaI-yR-Qay" firstAttribute="centerX" secondItem="nmA-He-hqu" secondAttribute="centerX" id="EFj-FR-ch6"/>
+                            <constraint firstItem="V4P-2b-YJo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bOQ-AV-B0X" secondAttribute="bottom" constant="20" id="KXn-Hc-ici"/>
+                            <constraint firstItem="bOQ-AV-B0X" firstAttribute="centerX" secondItem="nmA-He-hqu" secondAttribute="centerX" id="ayw-ec-U5f"/>
+                            <constraint firstItem="V4P-2b-YJo" firstAttribute="centerX" secondItem="nmA-He-hqu" secondAttribute="centerX" id="d8b-bQ-iRs"/>
+                            <constraint firstItem="bOQ-AV-B0X" firstAttribute="leading" secondItem="3cP-Nx-jmd" secondAttribute="leading" constant="300" id="i5F-HP-gsM"/>
+                            <constraint firstItem="3cP-Nx-jmd" firstAttribute="bottom" secondItem="V4P-2b-YJo" secondAttribute="bottom" constant="100" id="jML-XH-mGE"/>
+                            <constraint firstItem="3cP-Nx-jmd" firstAttribute="trailing" secondItem="bOQ-AV-B0X" secondAttribute="trailing" constant="300" id="lyg-n3-ElN"/>
+                            <constraint firstItem="dI7-SQ-GXV" firstAttribute="centerX" secondItem="nmA-He-hqu" secondAttribute="centerX" id="qeY-bw-ZxL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J6f-Nw-YLc"/>
+                    <connections>
+                        <outlet property="debugButton" destination="NjC-dV-tcu" id="ue4-0e-ATG"/>
+                        <outlet property="descriptionLabel" destination="dI7-SQ-GXV" id="jyk-vo-zXa"/>
+                        <outlet property="playerStackView" destination="bOQ-AV-B0X" id="zZ9-NX-SM0"/>
+                        <outlet property="readyButton" destination="ruI-Jm-2FO" id="r57-FO-Uw0"/>
+                        <outlet property="titleImageView" destination="vaI-yR-Qay" id="1va-sX-5cT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ6-rG-RxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="1583"/>
+        </scene>
+        <!--Board View Controller-->
+        <scene sceneID="Ouw-Rx-qtf">
+            <objects>
+                <viewController id="OdA-Tz-EU0" customClass="BoardViewController" customModule="CollusionTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mYv-5b-czA"/>
+                        <viewControllerLayoutGuide type="bottom" id="dtp-JA-t4j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dSo-NL-4UH">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-fZ-wQG">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pqW-Zo-USa"/>
+                        <constraints>
+                            <constraint firstItem="6vg-fZ-wQG" firstAttribute="bottom" secondItem="dSo-NL-4UH" secondAttribute="bottom" id="BpH-gh-Lvs"/>
+                            <constraint firstItem="6vg-fZ-wQG" firstAttribute="top" secondItem="dSo-NL-4UH" secondAttribute="top" id="Das-ZU-RUG"/>
+                            <constraint firstItem="6vg-fZ-wQG" firstAttribute="leading" secondItem="dSo-NL-4UH" secondAttribute="leading" id="GAs-l1-H8r"/>
+                            <constraint firstItem="6vg-fZ-wQG" firstAttribute="trailing" secondItem="dSo-NL-4UH" secondAttribute="trailing" id="jVn-FT-fBg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sZE-a6-IRq"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="6vg-fZ-wQG" id="EhD-yz-GsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFg-j1-YME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="3096"/>
+        </scene>
+        <!--How To Play View Controller-->
+        <scene sceneID="Wz4-sB-bHu">
+            <objects>
+                <viewController id="3Nu-pB-ME3" customClass="HowToPlayViewController" customModule="CollusionTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sgw-Ux-zux"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wrf-KE-RQt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hfM-xR-fR0">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3J-UM-YwF">
+                                <rect key="frame" x="220" y="171" width="1480" height="598"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shO-sX-Bmj">
+                                <rect key="frame" x="809" y="806" width="302" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="4sG-ux-07p"/>
+                                    <constraint firstAttribute="width" constant="302" id="rIm-sJ-sQ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k8T-p2-nY4"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="shO-sX-Bmj" firstAttribute="centerX" secondItem="hfM-xR-fR0" secondAttribute="centerX" id="81d-N1-X0Z"/>
+                            <constraint firstItem="k8T-p2-nY4" firstAttribute="trailing" secondItem="p3J-UM-YwF" secondAttribute="trailing" constant="140" id="FGS-v1-Xbz"/>
+                            <constraint firstItem="shO-sX-Bmj" firstAttribute="top" secondItem="p3J-UM-YwF" secondAttribute="bottom" constant="37" id="SJu-3n-hno"/>
+                            <constraint firstItem="p3J-UM-YwF" firstAttribute="top" secondItem="k8T-p2-nY4" secondAttribute="top" constant="111" id="TtV-fq-RAj"/>
+                            <constraint firstItem="k8T-p2-nY4" firstAttribute="bottom" secondItem="shO-sX-Bmj" secondAttribute="bottom" constant="112" id="VVS-lA-F8W"/>
+                            <constraint firstItem="p3J-UM-YwF" firstAttribute="leading" secondItem="k8T-p2-nY4" secondAttribute="leading" constant="140" id="yCG-I4-P9q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aYe-My-EJH"/>
+                    <connections>
+                        <outlet property="doneButton" destination="shO-sX-Bmj" id="JTX-l9-LXx"/>
+                        <outlet property="textView" destination="p3J-UM-YwF" id="6eA-Oa-vYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y3-YC-HOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1109" y="1577"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTHING TO SEE HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmM-F8-1K6">
                                 <rect key="frame" x="758" y="517" width="404" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -49,4 +318,5 @@
             <point key="canvasLocation" x="-120" y="76"/>
         </scene>
     </scenes>
+>>>>>>> develop
 </document>

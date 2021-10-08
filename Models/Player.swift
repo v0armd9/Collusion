@@ -16,12 +16,12 @@ enum Affiliation {
 class Player {
     let name: String
     let party: Affiliation
-    let isSecretHitler: Bool
-    let isPresident: Bool
-    let isChancellor: Bool
-    let hasVoted: Bool
-    let voteValue: Bool
-    let isDead: Bool
+    var isSecretHitler: Bool
+    var isPresident: Bool
+    var isChancellor: Bool
+    var hasVoted: Bool
+    var voteValue: Bool
+    var isDead: Bool
 
     init(name: String, party: Affiliation, isSecretHitler: Bool, isPresident: Bool, isChancellor: Bool, hasVoted: Bool, voteValue: Bool, isDead: Bool) {
         self.name = name
@@ -34,7 +34,6 @@ class Player {
         self.isDead = isDead
     }
 }
-
 
 enum GamePlayOptions: Int {
     case five = 5
