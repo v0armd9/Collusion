@@ -13,6 +13,9 @@
 		C4293990270F9C810001BF7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C429398E270F9C810001BF7A /* Main.storyboard */; };
 		C4293992270F9C830001BF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4293991270F9C830001BF7A /* Assets.xcassets */; };
 		C4293995270F9C830001BF7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4293993270F9C830001BF7A /* LaunchScreen.storyboard */; };
+		C42939B9270FF1890001BF7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939B8270FF1890001BF7A /* AppDelegate.swift */; };
+		C42939C0270FF18D0001BF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42939BF270FF18D0001BF7A /* Assets.xcassets */; };
+		C42939C3270FF18D0001BF7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42939C1270FF18D0001BF7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +27,22 @@
 		C4293991270F9C830001BF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4293994270F9C830001BF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4293996270F9C830001BF7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42939B6270FF1890001BF7A /* CollusionTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollusionTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42939B8270FF1890001BF7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C42939BF270FF18D0001BF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C42939C2270FF18D0001BF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C42939C4270FF18D0001BF7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4293982270F9C800001BF7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42939B3270FF1890001BF7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C4293987270F9C800001BF7A /* Collusion */,
+				C42939B7270FF1890001BF7A /* CollusionTV */,
 				C4293986270F9C800001BF7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C4293985270F9C800001BF7A /* Collusion.app */,
+				C42939B6270FF1890001BF7A /* CollusionTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +82,17 @@
 				C4293996270F9C830001BF7A /* Info.plist */,
 			);
 			path = Collusion;
+			sourceTree = "<group>";
+		};
+		C42939B7270FF1890001BF7A /* CollusionTV */ = {
+			isa = PBXGroup;
+			children = (
+				C42939B8270FF1890001BF7A /* AppDelegate.swift */,
+				C42939BF270FF18D0001BF7A /* Assets.xcassets */,
+				C42939C1270FF18D0001BF7A /* LaunchScreen.storyboard */,
+				C42939C4270FF18D0001BF7A /* Info.plist */,
+			);
+			path = CollusionTV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +115,23 @@
 			productReference = C4293985270F9C800001BF7A /* Collusion.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C42939B5270FF1890001BF7A /* CollusionTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42939C7270FF18D0001BF7A /* Build configuration list for PBXNativeTarget "CollusionTV" */;
+			buildPhases = (
+				C42939B2270FF1890001BF7A /* Sources */,
+				C42939B3270FF1890001BF7A /* Frameworks */,
+				C42939B4270FF1890001BF7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollusionTV;
+			productName = CollusionTV;
+			productReference = C42939B6270FF1890001BF7A /* CollusionTV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +142,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					C4293984270F9C800001BF7A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C42939B5270FF1890001BF7A = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -115,6 +163,7 @@
 			projectRoot = "";
 			targets = (
 				C4293984270F9C800001BF7A /* Collusion */,
+				C42939B5270FF1890001BF7A /* CollusionTV */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +179,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C42939B4270FF1890001BF7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42939C3270FF18D0001BF7A /* LaunchScreen.storyboard in Resources */,
+				C42939C0270FF18D0001BF7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,6 +198,14 @@
 				C429398D270F9C810001BF7A /* ViewController.swift in Sources */,
 				C4293989270F9C800001BF7A /* AppDelegate.swift in Sources */,
 				C429398B270F9C810001BF7A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42939B2270FF1890001BF7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42939B9270FF1890001BF7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +224,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				C4293994270F9C830001BF7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C42939C1270FF18D0001BF7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42939C2270FF18D0001BF7A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -321,6 +395,48 @@
 			};
 			name = Release;
 		};
+		C42939C5270FF18D0001BF7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP48FW2MG5;
+				INFOPLIST_FILE = CollusionTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dma.CollusionTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Debug;
+		};
+		C42939C6270FF18D0001BF7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP48FW2MG5;
+				INFOPLIST_FILE = CollusionTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dma.CollusionTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +454,15 @@
 			buildConfigurations = (
 				C429399A270F9C830001BF7A /* Debug */,
 				C429399B270F9C830001BF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42939C7270FF18D0001BF7A /* Build configuration list for PBXNativeTarget "CollusionTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42939C5270FF18D0001BF7A /* Debug */,
+				C42939C6270FF18D0001BF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
