@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0516391B270FCBD40096AE10 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516391A270FCBD40096AE10 /* Cards.swift */; };
+		0516391D270FDC830096AE10 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516391C270FDC830096AE10 /* Player.swift */; };
 		C4293989270F9C800001BF7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4293988270F9C800001BF7A /* AppDelegate.swift */; };
 		C429398B270F9C810001BF7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429398A270F9C810001BF7A /* SceneDelegate.swift */; };
 		C429398D270F9C810001BF7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429398C270F9C810001BF7A /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0516391A270FCBD40096AE10 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		0516391C270FDC830096AE10 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C4293985270F9C800001BF7A /* Collusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4293988270F9C800001BF7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C429398A270F9C810001BF7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				C4293988270F9C800001BF7A /* AppDelegate.swift */,
 				C429398A270F9C810001BF7A /* SceneDelegate.swift */,
+				0516391A270FCBD40096AE10 /* Cards.swift */,
+				0516391C270FDC830096AE10 /* Player.swift */,
 				C429398C270F9C810001BF7A /* ViewController.swift */,
 				C429398E270F9C810001BF7A /* Main.storyboard */,
 				C4293991270F9C830001BF7A /* Assets.xcassets */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0516391D270FDC830096AE10 /* Player.swift in Sources */,
 				C429398D270F9C810001BF7A /* ViewController.swift in Sources */,
 				C4293989270F9C800001BF7A /* AppDelegate.swift in Sources */,
 				C429398B270F9C810001BF7A /* SceneDelegate.swift in Sources */,
+				0516391B270FCBD40096AE10 /* Cards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
