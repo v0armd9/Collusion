@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0516391B270FCBD40096AE10 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516391A270FCBD40096AE10 /* Cards.swift */; };
 		0516391D270FDC830096AE10 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516391C270FDC830096AE10 /* Player.swift */; };
-		0516392227109BE30096AE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0516392127109BE30096AE10 /* Main.storyboard */; };
 		0516392427109C210096AE10 /* HomeTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516392327109C210096AE10 /* HomeTvViewController.swift */; };
 		0516392627109F2E0096AE10 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516392527109F2E0096AE10 /* Extensions.swift */; };
 		051639282710A22A0096AE10 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051639272710A22A0096AE10 /* HowToPlayViewController.swift */; };
@@ -27,7 +26,6 @@
 		C42939C0270FF18D0001BF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42939BF270FF18D0001BF7A /* Assets.xcassets */; };
 		C42939C3270FF18D0001BF7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42939C1270FF18D0001BF7A /* LaunchScreen.storyboard */; };
 		C42939CA270FFE350001BF7A /* MCSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939C9270FFE350001BF7A /* MCSessionService.swift */; };
-		C42939CE271089AE0001BF7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42939CD271089AE0001BF7A /* Main.storyboard */; };
 		C42939D027108D260001BF7A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939CF27108D260001BF7A /* TestViewController.swift */; };
 		C4C6C0B32710B1A000BE7288 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +33,6 @@
 /* Begin PBXFileReference section */
 		0516391A270FCBD40096AE10 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		0516391C270FDC830096AE10 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		0516392127109BE30096AE10 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0516392327109C210096AE10 /* HomeTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTvViewController.swift; sourceTree = "<group>"; };
 		0516392527109F2E0096AE10 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		051639272710A22A0096AE10 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +52,6 @@
 		C42939C2270FF18D0001BF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C42939C4270FF18D0001BF7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C42939C9270FFE350001BF7A /* MCSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSessionService.swift; sourceTree = "<group>"; };
-		C42939CD271089AE0001BF7A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C42939CF27108D260001BF7A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,12 +126,10 @@
 				0516392D2710B6220096AE10 /* BoardViewController.swift */,
 				051639272710A22A0096AE10 /* HowToPlayViewController.swift */,
 				051639292710A2580096AE10 /* LobbyViewController.swift */,
-				0516392127109BE30096AE10 /* Main.storyboard */,
 				C42939BF270FF18D0001BF7A /* Assets.xcassets */,
 				C42939C1270FF18D0001BF7A /* LaunchScreen.storyboard */,
 				C42939C4270FF18D0001BF7A /* Info.plist */,
 				C42939C9270FFE350001BF7A /* MCSessionService.swift */,
-				C42939CD271089AE0001BF7A /* Main.storyboard */,
 				C42939CF27108D260001BF7A /* TestViewController.swift */,
 			);
 			path = CollusionTV;
@@ -229,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0516392227109BE30096AE10 /* Main.storyboard in Resources */,
 				C42939C3270FF18D0001BF7A /* LaunchScreen.storyboard in Resources */,
 				C42939C0270FF18D0001BF7A /* Assets.xcassets in Resources */,
 			);
