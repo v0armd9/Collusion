@@ -29,6 +29,7 @@
 		C42939CA270FFE350001BF7A /* MCSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939C9270FFE350001BF7A /* MCSessionService.swift */; };
 		C42939CE271089AE0001BF7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42939CD271089AE0001BF7A /* Main.storyboard */; };
 		C42939D027108D260001BF7A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939CF27108D260001BF7A /* TestViewController.swift */; };
+		C4C6C0B32710B1A000BE7288 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		C42939C9270FFE350001BF7A /* MCSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSessionService.swift; sourceTree = "<group>"; };
 		C42939CD271089AE0001BF7A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C42939CF27108D260001BF7A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				C4293991270F9C830001BF7A /* Assets.xcassets */,
 				C4293993270F9C830001BF7A /* LaunchScreen.storyboard */,
 				C4293996270F9C830001BF7A /* Info.plist */,
+				C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */,
 			);
 			path = Collusion;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				C429398D270F9C810001BF7A /* ViewController.swift in Sources */,
 				C4293989270F9C800001BF7A /* AppDelegate.swift in Sources */,
 				C429398B270F9C810001BF7A /* SceneDelegate.swift in Sources */,
+				C4C6C0B32710B1A000BE7288 /* JoinGameViewController.swift in Sources */,
 				0516391B270FCBD40096AE10 /* Cards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
