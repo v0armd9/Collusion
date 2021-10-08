@@ -56,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0516391E27108F660096AE10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0516391A270FCBD40096AE10 /* Cards.swift */,
+				0516391C270FDC830096AE10 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C429397C270F9C800001BF7A = {
 			isa = PBXGroup;
 			children = (
 				C4293987270F9C800001BF7A /* Collusion */,
+				0516391E27108F660096AE10 /* Models */,
 				C42939B7270FF1890001BF7A /* CollusionTV */,
 				C4293986270F9C800001BF7A /* Products */,
 			);
@@ -79,8 +89,6 @@
 			children = (
 				C4293988270F9C800001BF7A /* AppDelegate.swift */,
 				C429398A270F9C810001BF7A /* SceneDelegate.swift */,
-				0516391A270FCBD40096AE10 /* Cards.swift */,
-				0516391C270FDC830096AE10 /* Player.swift */,
 				C429398C270F9C810001BF7A /* ViewController.swift */,
 				C429398E270F9C810001BF7A /* Main.storyboard */,
 				C4293991270F9C830001BF7A /* Assets.xcassets */,
