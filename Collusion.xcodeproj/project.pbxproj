@@ -28,6 +28,7 @@
 		C42939CA270FFE350001BF7A /* MCSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939C9270FFE350001BF7A /* MCSessionService.swift */; };
 		C42939D027108D260001BF7A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42939CF27108D260001BF7A /* TestViewController.swift */; };
 		C4C6C0B32710B1A000BE7288 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */; };
+		C4C6C0B52710CE2300BE7288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6C0B42710CE2300BE7288 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C42939C9270FFE350001BF7A /* MCSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSessionService.swift; sourceTree = "<group>"; };
 		C42939CF27108D260001BF7A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C4C6C0B22710B1A000BE7288 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		C4C6C0B42710CE2300BE7288 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		C42939B7270FF1890001BF7A /* CollusionTV */ = {
 			isa = PBXGroup;
 			children = (
+				C4C6C0B42710CE2300BE7288 /* Main.storyboard */,
 				C42939B8270FF1890001BF7A /* AppDelegate.swift */,
 				0516392527109F2E0096AE10 /* Extensions.swift */,
 				0516392327109C210096AE10 /* HomeTvViewController.swift */,
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C6C0B52710CE2300BE7288 /* Main.storyboard in Resources */,
 				C42939C3270FF18D0001BF7A /* LaunchScreen.storyboard in Resources */,
 				C42939C0270FF18D0001BF7A /* Assets.xcassets in Resources */,
 			);
