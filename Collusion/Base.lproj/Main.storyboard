@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KZq-rh-a4k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collusion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSx-5W-2hf">
+                                <rect key="frame" x="41.5" y="188" width="331" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-eI-nZf">
+                                <rect key="frame" x="41.5" y="308.5" width="331" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8H7-xT-Rbo">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="30"/>
+                                        <state key="normal" title="Facsist"/>
+                                        <connections>
+                                            <action selector="fascistButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0g-83-cqL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-GH-Zrd">
+                                        <rect key="frame" x="170.5" y="0.0" width="160.5" height="30"/>
+                                        <state key="normal" title="Liberal"/>
+                                        <connections>
+                                            <action selector="liberalButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbq-uB-pPN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tni-fM-bjx">
+                                <rect key="frame" x="171" y="422.5" width="72" height="30"/>
+                                <state key="normal" title="Send Card"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buR-xD-3UF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aSx-5W-2hf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="2KQ-kX-ir3"/>
+                            <constraint firstItem="tni-fM-bjx" firstAttribute="top" secondItem="FNO-eI-nZf" secondAttribute="bottom" constant="84" id="3jO-z6-Co8"/>
+                            <constraint firstItem="FNO-eI-nZf" firstAttribute="top" secondItem="aSx-5W-2hf" secondAttribute="bottom" constant="100" id="4AC-lA-s3J"/>
+                            <constraint firstItem="tni-fM-bjx" firstAttribute="centerX" secondItem="FNO-eI-nZf" secondAttribute="centerX" id="IMN-90-d0i"/>
+                            <constraint firstItem="FNO-eI-nZf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S0G-KQ-Vo7"/>
+                            <constraint firstItem="aSx-5W-2hf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZeI-bo-paa"/>
+                            <constraint firstItem="aSx-5W-2hf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="fyJ-Zu-iIS"/>
+                            <constraint firstItem="FNO-eI-nZf" firstAttribute="width" secondItem="aSx-5W-2hf" secondAttribute="width" id="rNU-sX-mc0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YGt-Iy-568"/>
+                    <connections>
+                        <outlet property="cardMessageLabel" destination="aSx-5W-2hf" id="6QE-a0-Z0w"/>
+                        <outlet property="fascistButton" destination="8H7-xT-Rbo" id="gzS-6X-sdz"/>
+                        <outlet property="liberalButton" destination="Nd7-GH-Zrd" id="Cy8-YW-pAy"/>
+                        <outlet property="sendButton" destination="tni-fM-bjx" id="xmK-y5-Xx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q4r-TA-ft7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KZq-rh-a4k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qjj-bh-vjp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R7A-gq-gzl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDC-9h-xV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
