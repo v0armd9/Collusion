@@ -10,17 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet private var cardMessageLabel: UILabel!
     @IBOutlet private var fascistButton: UIButton!
     @IBOutlet private var liberalButton: UIButton!
     @IBOutlet private var sendButton: UIButton!
 
+    // MARK: - Properties
     var peerID: MCPeerID!
     var mcSession: MCSession!
     var mcNearbyServiceAdvertiser: MCNearbyServiceAdvertiser!
     private var policyToSend: String = ""
+    let users = ["player1", "player2", "player3", "player4", "player5"]
+    let players: [Player] = []
 
-
+    // MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showConnectionMenu))
@@ -29,6 +33,7 @@ class ViewController: UIViewController {
         mcSession.delegate = self
     }
 
+    // MARK: - IBActions
     @IBAction func fascistButtonTapped(_ sender: Any) {
         policyToSend = "Fascist"
         sendButton.setTitle("Send Fascist Policy", for: .normal)
@@ -40,7 +45,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendButtonTapped(_ sender: Any) {
-
         guard let policyData = policyToSend.data(using: String.Encoding.utf8, allowLossyConversion: false) else { return }
 
         do {
@@ -49,9 +53,12 @@ class ViewController: UIViewController {
             print(error, error.localizedDescription)
         }
     }
+}
 
+// MARK: - Private
+private extension ViewController {
 
-    @objc private func showConnectionMenu() {
+    @objc func showConnectionMenu() {
         let ac = UIAlertController(title: "Connection Menu", message: nil, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Host a session", style: .default, handler: hostSession))
         ac.addAction(UIAlertAction(title: "Join a session", style: .default, handler: joinSession))
@@ -59,25 +66,40 @@ class ViewController: UIViewController {
         present(ac, animated: true)
     }
 
-    private func hostSession(action: UIAlertAction) {
+    func hostSession(action: UIAlertAction) {
         mcNearbyServiceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: "gameCreation")
         mcNearbyServiceAdvertiser.delegate = self
         mcNearbyServiceAdvertiser.startAdvertisingPeer()
     }
 
-    private func joinSession(action: UIAlertAction) {
+    func joinSession(action: UIAlertAction) {
         let mcBrowser = MCBrowserViewController(serviceType: "gameCreation", session: self.mcSession)
         mcBrowser.delegate = self
         present(mcBrowser, animated: true)
     }
+
+    func printPartyCards() {
+        users.forEach { _ in
+            print(Card(cardType: .party, cardAffiliation: .fascist))
+            print(Card(cardType: .roll, cardAffiliation: .fascist))
+            print(Card(cardType: .party, cardAffiliation: .liberal))
+            print(Card(cardType: .roll, cardAffiliation: .liberal))
+        }
+    }
+
+    func printPolicyCards() {
+        users.forEach { _ in
+            print(Card(cardType: .policy, cardAffiliation: .liberal))
+        }
+    }
 }
 
+// MARK: - MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCBrowserViewControllerDelegate
 extension ViewController: MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCBrowserViewControllerDelegate {
 
     func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
         invitationHandler(true, mcSession)
     }
-
 
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
 
